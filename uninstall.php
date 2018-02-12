@@ -17,9 +17,9 @@ delete_option('pvc' . '_google_font_list');
 if ( get_option('pvc_clean_on_deletion') == 1 ) {
 	delete_option('pvc_toggle_box_open');
 	delete_option('pvc' . '-custom-boxes');
-
+//Delete meta data
 	delete_metadata( 'user', 0, 'pvc' . '-' . 'plugin_framework_global_box' . '-' . 'opened', '', true );
-
+//Delete pvc settings
 	delete_option('pvc_settings');
 	delete_option('a3_pvc_version');
 	delete_option('a3rev_pvc_plugin');
